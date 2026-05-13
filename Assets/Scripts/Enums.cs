@@ -22,5 +22,6 @@ public enum PieceProperty
 {
     Basic,
     Obstacle,
-    Special
+    Special,
+    Collectible
 }
