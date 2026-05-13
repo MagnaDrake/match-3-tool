@@ -36,7 +36,9 @@ public class LevelEditorManager : MonoBehaviour
         {
             return Instantiate(boPrefab);
         }
-        return boPool.Dequeue();
+        BoardObject bo = boPool.Dequeue();
+        bo.gameObject.SetActive(true);
+        return bo;
     }
 
     public void RecycleBoardObject(BoardObject bod)
