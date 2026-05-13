@@ -37,6 +37,9 @@ public class EditorMenu : MonoBehaviour
         scoreGoal.transform.parent.gameObject.SetActive(false);
         moveLimit.transform.parent.gameObject.SetActive(false);
         savePanel.transform.parent.gameObject.SetActive(false);
+
+        //lazy fix
+        LevelEditorManager.Instance.levelEditor = this;
     }
 
     // Update is called once per frame
